@@ -48,7 +48,7 @@ resource "aws_security_group" "mysg" {
 }
 
 # resource "aws_key_pair" "tf-key-pair" {
-#   key_name   = "demo"
+#   key_name   = "peer"
 #   public_key = tls_private_key.rsa.public_key_openssh
 # }
 
@@ -59,5 +59,5 @@ resource "aws_security_group" "mysg" {
 
 # resource "local_file" "tf-key" {
 #   content  = tls_private_key.rsa.private_key_pem
-#   filename = "demo"
+#   filename = "peer"
 # }
